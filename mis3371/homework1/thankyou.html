@@ -1,0 +1,64 @@
+<!--
+Program name: thankyou.html
+Author: Your Name (UH Roster)
+Date created: 2026-02-22
+Date last edited: 2026-02-22
+Version: 1.0
+Description: Thank-you page for MIS 3371 Homework 1 patient registration form.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thank You</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="page">
+
+		<div id="header">
+			<img src="logo.png" alt="We'R'Docs Medical logo" id="logo">
+			<div id="headerText">
+				<h1>We'R'Docs Medical</h1>
+				<p class="subhead">
+					Patient Registration &nbsp;|&nbsp;
+					Today&rsquo;s Date: <span id="today">date goes here</span>
+				</p>
+			</div>
+		</div>
+
+		<div id="content">
+			<h2>Thank you for your submission.</h2>
+			<p>Your patient registration form has been received.</p>
+			<p><a href="index.html">Return to the form</a></p>
+		</div>
+
+		<div id="footer">
+			<div class="footerLeft">
+				<strong>We'R'Docs Medical</strong><br>
+				PO BOX 18881<br>
+				Sugar Land, TX 77496
+			</div>
+
+			<div class="footerCenter">
+				<button type="button" onclick="alert('Contact: info@werdocs.example')">CONTACT US</button>
+			</div>
+
+			<div class="footerRight">
+				<a href="#" class="socialLink">Facebook</a>
+				<a href="#" class="socialLink">Twitter/X</a>
+				<a href="#" class="socialLink">Instagram</a>
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+		document.getElementById('today').innerHTML = new Date().toLocaleDateString();
+	</script>
+</body>
+</html>
